@@ -11,7 +11,7 @@ function App() {
       <UpNext />
       <InputEmployee />
       {/* <SmallTop /> */}
-      <BigTop />
+      
       <OnBreak />
     </div>
       

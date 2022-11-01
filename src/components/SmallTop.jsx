@@ -4,12 +4,13 @@ import './SmallTop.css'
 
 export default function SmallTop(props) {
 
-  // console.log(props);
+  // console.log("Small-Top Console: Props:", props);
+
 
   return (
     <div>
       <p>Small Top Component</p>
-      {/* <table>
+      <table>
         <tbody>
           <tr>
             <th>Employee</th>
@@ -18,7 +19,11 @@ export default function SmallTop(props) {
             <th>Break</th>
             <th>Clock Out</th>
           </tr>
-          <tr>
+          
+          {props.employees.map((employee =><tr key={employee.id}><td>{employee.name}</td></tr>))}
+          
+          
+          {/* <tr>
             <td>
               {props.employee.name}
             </td>
@@ -37,10 +42,10 @@ export default function SmallTop(props) {
             <td>
               <button>Assign Next Table to Me</button>
             </td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
-      <h3>Employee Name: {props.employees.employee.name}</h3> */}
+      
 
       {/* <UpNext /> */}
     </div>
