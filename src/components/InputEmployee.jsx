@@ -1,43 +1,36 @@
 import React, {useState} from 'react';
 import SmallTop from './SmallTop';
 import BigTop from './BigTop';
+import { v4 as uuidv4 } from 'uuid';
 // import OnBreak from './OnBreak';
 
-let id = 1;
+// let id = 0;
 
 export default function InputEmployee() {
     
-    let [employees, setEmployee] = useState([{
-      id: id,
-      name: '', 
-      trainee: false,
-      currentCount: 0, 
-      skip: false, 
-      break: false, 
-      clockout: false,
-    }]);
+    // Sets state hook to an empty array which will hold the employees
+    let [employees, setEmployee] = useState([]);
 
+    // When the 'add' button is clicked, new employee is added to array.
     function handleSubmit(e) {
       e.preventDefault();
       const nameInput = document.getElementById('employee-name')
 
-      // Sets Employee values based on what is inputed
-      setEmployee({
-        id: id++,
+      // Sets New Employee values based on what is inputed
+      setEmployee(arr => [...arr, {
+        id: uuidv4(),
         name: nameInput.value, 
         trainee: false,
         currentCount: 0, 
         skip: false, 
         break: false, 
         clockout: false,
-      });
-
-      // Resets name input placeholder
-      nameInput.value = '';
+      }]);
     }
 
-      // employees.push(employee)
-      console.log("employees-from-input-component:", employees);
+      // console.log("employees", employees);
+      // Resets name input placeholder
+      // nameInput.value = '';
 
 
   return (
