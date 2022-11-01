@@ -28,7 +28,7 @@ export default function InputEmployee() {
       }]);
     }
 
-      // console.log("employees", employees);
+      // ***** Not functioning  - need to figure out; 
       // Resets name input placeholder
       // nameInput.value = '';
 
