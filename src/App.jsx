@@ -6,7 +6,7 @@ import UpNext from './components/UpNext';
 import InputEmployee from './components/InputEmployee';
 // import SmallTop from './components/SmallTop';
 import BigTop from './components/BigTop';
-import OnBreak from './components/OnBreak';
+import Pause from './components/';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <InputEmployee /> 
       {/* <SmallTop /> */}
       
-      <OnBreak />
+      <Pause />
 
     </div>
       

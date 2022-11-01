@@ -23,7 +23,7 @@ export default function InputEmployee() {
         trainee: false,
         currentCount: 0, 
         skip: false, 
-        break: false, 
+        pause: false, 
         clockout: false,
       }]);
     }
@@ -40,11 +40,14 @@ export default function InputEmployee() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="employee-name">Add Employee</label>
         <input id="employee-name" placeholder='name'></input>
+
+        {/* include radio buttons for server or trainee */}
+        {/* for logic-- if server selected, added to both small and big top tables. if trainee, only added to small */}
         <button type="submit">Add</button>
       </form>
 
       <SmallTop employees={employees}/>
-      {/* <BigTop employees={employees}/> */}
+      <BigTop employees={employees}/>
       
       </div>
 
