@@ -4,43 +4,48 @@ import './SmallTop.css'
 
 export default function SmallTop(props) {
 
-  // console.log(props);
+  console.log("Small-Top Console: Props:", props);
+
 
   return (
     <div>
       <p>Small Top Component</p>
-      {/* <table>
+      <table>
         <tbody>
           <tr>
             <th>Employee</th>
-            <th>Current Count</th>
+            <th>Total Table Count</th>
+            <th>Assign</th>
             <th>Skip</th>
-            <th>Break</th>
+            <th>Pause</th>
             <th>Clock Out</th>
           </tr>
-          <tr>
-            <td>
-              {props.employee.name}
-            </td>
-            <td>
-            {props.employee.currentCount}
-            </td>
-            <td>
-              <button>Skip</button>
-            </td>
-            <td>
-              <button>Go on Break</button>
-            </td>
-            <td>
-              <button>Clock Out</button>
-            </td>
-            <td>
-              <button>Assign Next Table to Me</button>
-            </td>
-          </tr>
+          
+          {props.employees.map((employee =>
+            <tr key={employee.id}>
+              <td>
+                {employee.name}
+              </td>
+              <td>
+                {employee.currentCount}
+              </td>
+              <td>
+                <button>+</button>
+              </td>
+              <td>
+                <button>Skip</button>
+              </td>
+              <td>
+                <button>Pause</button>
+              </td>
+              <td>
+                <button>Clock Out</button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
-      <h3>Employee Name: {props.employees.employee.name}</h3> */}
+      
 
       {/* <UpNext /> */}
     </div>
