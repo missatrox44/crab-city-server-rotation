@@ -1,7 +1,5 @@
 
 import { useState } from 'react'
-import BigTop from "./assets/components/BigTop";
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 import UpNext from './components/UpNext';
@@ -15,11 +13,12 @@ function App() {
 
   return (
     <div>
-      <UpNext />
-      <InputEmployee />
+      
+       <UpNext />
+      <InputEmployee /> 
       {/* <SmallTop /> */}
       <BigTop />
-      <OnBreak />
+      <OnBreak /> 
     </div>
       
   )
