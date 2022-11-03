@@ -10,7 +10,7 @@ import React from "react";
 // import ServerCount from "./ServerCount";
 
 const Server = "Kyle";
-const Count = 1; 
+const Count = 1;
 const Button = 'Back in the game';
 
 const BigTop = (props) => {
@@ -27,14 +27,14 @@ const BigTop = (props) => {
             {/* when the plus button is clicked, hide the plus and skip button and show a 'ready to return button */}
             <th>Skip</th>
           </tr>
-          
+
           {props.employees.map((employee =>
             <tr key={employee.id}>
               <td>
                 {employee.name}
               </td>
               <td>
-                {employee.currentCount}
+                {employee.bigTopCount}
               </td>
               <td>
                 <button>+</button>
@@ -42,7 +42,7 @@ const BigTop = (props) => {
               <td>
                 <button>Skip</button>
               </td>
-              
+
             </tr>
           ))}
         </tbody>
