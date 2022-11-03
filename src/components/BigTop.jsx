@@ -6,12 +6,31 @@
 
 
 import React from "react";
+import InputEmployee from "./InputEmployee";
 // import CurrentCount from "./CurrentCount";
 // import ServerCount from "./ServerCount";
 
 const Server = "Kyle";
 const Count = 1; 
 const Button = 'Back in the game';
+
+export default function BigTop() {
+{/* when assign is clicked on big top-- write function to put employee in disabled mode for smalltop and render a button that says 'return' and remove assign and skip button */}
+
+let [employees, setEmployee] = useState([]);
+
+function handleAssign(e) {
+  e.preventDefault();
+  const assignEmployee = document.getElementById('assign-btn');
+  
+  
+  }
+
+function removeFromSmallTop(employee) {
+  document.getElementById('assign')
+}
+
+}
 
 const BigTop = (props) => {
   return (
@@ -24,6 +43,7 @@ const BigTop = (props) => {
             <th>Total Table Count</th>
             <th>Assign</th>
             {/* when assign is clicked on big top-- write function to put employee in disabled mode for smalltop and render a button that says 'return' and remove assign and skip button */}
+            
             {/* when the plus button is clicked, hide the plus and skip button and show a 'ready to return button */}
             <th>Skip</th>
           </tr>
@@ -51,4 +71,4 @@ const BigTop = (props) => {
   )
 }
 
-export default BigTop
+
