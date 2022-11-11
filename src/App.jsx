@@ -1,28 +1,20 @@
-
-import { useState } from 'react'
-import './App.css'
-
+import React from 'react';
 import UpNext from './components/UpNext';
 import InputEmployee from './components/InputEmployee';
-// import SmallTop from './components/SmallTop';
-import BigTop from './components/BigTop';
-import Pause from './components/';
-
+import Pause from './components/Pause';
+import './App.css';
 
 function App() {
 
   return (
     <div>
       
-       <UpNext />
+      <UpNext />
       <InputEmployee /> 
-      {/* <SmallTop /> */}
-      
       <Pause />
 
     </div>
-      
-  )
+  );
 }
 
-export default App
+export default App;
