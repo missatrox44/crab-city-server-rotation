@@ -34,7 +34,7 @@ const BigTop = (props) => {
                 {employee.name}
               </td>
               <td>
-                {employee.currentCount}
+                {employee.bigTopCount}
               </td>
               <td>
                 <button>+</button>

@@ -21,7 +21,8 @@ export default function InputEmployee() {
         id: uuidv4(),
         name: nameInput.value, 
         trainee: false,
-        currentCount: 0, 
+        smallTopCount: 0,
+        bigTopCount: 0, 
         skip: false, 
         pause: false, 
         clockout: false,
@@ -43,7 +44,7 @@ export default function InputEmployee() {
 
         {/* include radio buttons for server or trainee */}
         {/* for logic-- if server selected, added to both small and big top tables. if trainee, only added to small */}
-        <button type="submit">Add</button>
+        <button type="submit" onClick={console.log('Added employee!')}>Add</button>
       </form>
 
       <SmallTop employees={employees}/>

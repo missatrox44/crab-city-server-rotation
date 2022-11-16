@@ -1,6 +1,7 @@
 import React from 'react';
 // import UpNext from './UpNext';
 import './SmallTop.css'
+import AssignBtn from './AssignBtn';
 
 export default function SmallTop(props) {
 
@@ -27,10 +28,10 @@ export default function SmallTop(props) {
                 {employee.name}
               </td>
               <td>
-                {employee.currentCount}
+                {employee.smallTopCount}
               </td>
               <td>
-                <button>+</button>
+                <AssignBtn />
               </td>
               <td>
                 <button>Skip</button>
